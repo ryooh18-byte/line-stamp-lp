@@ -9,11 +9,6 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;600;700&family=Noto+Serif+JP:wght@600;700&display=swap" rel="stylesheet">
   <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='16' fill='%23445348'/%3E%3Cpath d='M18 42c10-2 18-10 20-24 7 10 7 22-1 29-6 5-14 4-19-5Z' fill='%23fffaf2'/%3E%3Cpath d='M19 43c7-8 13-13 21-19' fill='none' stroke='%23d28d68' stroke-width='4' stroke-linecap='round'/%3E%3C/svg%3E">
-  <!--
-    公開前に、次の2つを消す（検索：class="tbc"）。
-    ・黄色い「要確認」の印（<span class="tbc">要確認</span>）
-    ・［　］で囲んだ、入力待ちの部分（実例のスタンプ名・価格・金額、実例の画像）
-  -->
   <style>
     :root{
       --paper:#f8f5ee;--paper-2:#eee9df;--card:#fffdf9;--ink:#30312d;--muted:#676158;
@@ -173,8 +168,6 @@
     .sticky.is-hidden{transform:translateY(110%);opacity:0;pointer-events:none}
 
     /* ===== このLP専用の部品 ===== */
-    /* 公開前に消す印 */
-    .tbc{display:inline-block;margin:0 .3em;padding:0 .5em;border-radius:6px;background:#fff1a8;color:#6a5800;font-size:.72rem;font-weight:700;line-height:1.7;vertical-align:.12em;white-space:nowrap}
     /* 冒頭 */
     .story p.lead{color:var(--muted);text-align:center;max-width:640px;margin:0 auto 18px}
     /* 全体の流れ */
@@ -570,8 +563,8 @@ LINEスタンプ9個ぶんの絵を、1枚の画像にまとめて作ってく�
               <li><b>スタンプが横長になっている</b><br>正方形に近い形にすると、STEP 3で型抜きしやすくなります。
                 <div class="say"><p id="say2">1つ1つのスタンプを、正方形に近い形にして、作り直してください。</p><button class="copy" type="button" data-copy="say2">コピーする</button></div></li>
               <li><b>セリフの文字が崩れている・誤字がある</b><br>直したい場所と、正しいセリフを伝えます。直らないときは、作り直してもらいます。</li>
-              <li><b>背景が透明にならない</b>（白や格子柄になる）<br>四角く型抜きすると、1個ずつの背景が白いまま残ってしまいます。透明になるまで、あきらめずに伝えてください。<span class="tbc">要確認</span>
-                <div class="say"><p id="say3">背景を完全に透明にして、作り直してください。</p><button class="copy" type="button" data-copy="say3">コピーする</button></div></li>
+              <li><b>背景が透明にならない</b>（白や格子柄になる）<br>四角く型抜きすると、1個ずつの背景が白いまま残ってしまいます。透明になるまで、あきらめずに伝えてください。
+                <div class="say"><p id="say3">透過されてないよ！もう一度して</p><button class="copy" type="button" data-copy="say3">コピーする</button></div></li>
               <li><b>画像が表示されない</b><br>ファイルや、保存用のリンクになったり、開くと黒い画面になったりしたときは、次のように伝えて、チャットの中に、出し直してもらいます。
                 <div class="say"><p id="say4">画像が表示されません。同じセリフ9個で、同じキャラクター・同じ絵柄の画像を、1枚目と同じように、チャットの中に画像として出し直してください。ファイルや、保存用のリンクにはしないでください。説明は書かないでください。</p><button class="copy" type="button" data-copy="say4">コピーする</button></div></li>
             </ul>
@@ -665,7 +658,7 @@ LINEスタンプ9個ぶんの絵を、1枚の画像にまとめて作ってく�
               <div class="note strong">⚠ 最初は、<span class="nw">「ショップ非公開」</span>や<span class="nw">「売上分配額なし」</span>と出ていることがあります。このままだと、新着・ランキング・検索に出ず、売上も分配されません。<b>必ず変えてください。</b></div>
             </li>
             <li>「次へ」を押して、タイトル・価格・スタンプを確認します。もう一度、「次へ」を押します。</li>
-            <li>権利などの確認の画面が出たら、内容を読んで、<b>すべてにチェック</b>をつけます<span class="tbc">要確認</span>。チェックをつけると、「<b>リクエスト</b>」が押せます。押すと、審査が始まります。
+            <li>権利などの確認の画面が出たら、内容を読んで、<b>すべてにチェック</b>をつけます。チェックをつけると、「<b>リクエスト</b>」が押せます。押すと、審査が始まります。
               <ul class="sub">
                 <li>審査をリクエストしたあとは、個数を変えられません。スタンプの並びと文字の間違いを、もう一度見てから押してください。</li>
               </ul>
@@ -674,7 +667,7 @@ LINEスタンプ9個ぶんの絵を、1枚の画像にまとめて作ってく�
             <li>承認されたら、<b>販売開始</b>です。初期設定では、承認のあとに、<b>リリース</b>（販売を始めるボタン）を押す必要があります（承認されると自動で始まる設定もあります）。
               <ul class="sub">
                 <li>リリースすると、LINEスタンプショップとLINE STOREに並びます。反映まで、1時間から数時間かかることがあります。</li>
-                <li>リリースのボタンは、ブラウザ（SafariやChromeなど）で開く、LINE Creators Marketのマイページの<span class="nw">「アイテム管理」</span>にあります<span class="tbc">要確認</span></li>
+                <li>リリースのボタンは、ブラウザ（SafariやChromeなど）で開く、LINE Creators Marketのマイページの<span class="nw">「アイテム管理」</span>にあります</li>
               </ul>
             </li>
           </ol>
@@ -686,7 +679,6 @@ LINEスタンプ9個ぶんの絵を、1枚の画像にまとめて作ってく�
               <li>ブラウザ（SafariやChromeなど）で<b>LINE Creators Market</b>（<a href="https://creator.line.me/ja/" target="_blank" rel="noopener noreferrer">https://creator.line.me/ja/</a>）のマイページを開き、「アイテム管理」→「スタンプ」から、「リジェクト」（却下）と出ているスタンプを開きます。</li>
               <li>「メッセージセンター」で理由を確認して、直してから、再申請します。</li>
             </ul>
-            <p style="margin-top:12px"><span class="tbc" style="margin-left:0">要確認</span>スマホのブラウザで、この画面を操作できるか</p>
           </div>
 
           <div class="note"><b>注意：</b>
