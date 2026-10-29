@@ -102,9 +102,9 @@
     .prompt-details[open] summary{margin-bottom:14px}
 
     /* 警告・注意書きは落ち着いたトーンに */
-    .note{margin-top:22px;border-left:3px solid rgba(184,117,86,.55);background:#f6efe8;padding:16px 18px;border-radius:0 12px 12px 0;color:var(--muted)}
+    .note{margin-top:22px;border-left:3px solid rgba(184,117,86,.55);background:#f6efe8;padding:14px 16px;border-radius:0 12px 12px 0;color:var(--muted);font-size:.85rem;line-height:1.8}
     .note b{color:#6a5a4c}
-    .note.strong{background:#f8e7de;border-left-color:#b8573a}
+    .note.strong{background:#f8e7de;border-left-color:#b8573a;font-size:.92rem}
     .note ul{margin:8px 0 0;padding-left:1.2em}
     .note li+li{margin-top:4px}
     .rule{display:flex;gap:12px;align-items:flex-start;margin:18px 0;padding:16px 18px;border:1px solid #e6dccf;border-radius:14px;background:#f6f2ea}
@@ -116,6 +116,10 @@
     .plain-box p{margin:0;color:var(--muted)}
     .plain-box p+p{margin-top:10px}
     .plain-box .check-list{margin:14px 0 0}
+    .plain-box.sub{padding:20px 22px}
+    .plain-box.sub h3{font-size:1rem;margin-bottom:8px}
+    .plain-box.sub p,.plain-box.sub li{font-size:.85rem;line-height:1.8}
+    .plain-box.sub .check-list{gap:6px;margin-top:10px}
     .plain-box pre{white-space:pre-wrap;margin:14px 0 0;padding:16px 18px;background:var(--paper-2);border-radius:12px;font-family:var(--sans);font-size:.85rem;line-height:1.75;color:var(--ink)}
 
     .source-links{margin-top:20px;font-size:.8rem;color:var(--muted)}
@@ -309,16 +313,7 @@ AIで副収入を得るための方法を、
         <div class="section-head">
           <h2>このガイドについて</h2>
         </div>
-        <p>売れそうな職業とセリフをAIが探し、
-スタンプ9個ぶんの絵を1枚にまとめてAIが作り、
-LINEスタンプメーカーで1個ずつ型抜きして
-販売申請するまでの流れです。</p>
-        <ul class="check-list">
-          <li><b>売れる職業とセリフを、AIが考える</b>（ChatGPTに送る指示の文章＝プロンプト①）</li>
-          <li><b>スタンプ9個を、1枚の画像にまとめて、AIが作る</b>（プロンプト②）</li>
-          <li><b>LINEスタンプメーカーで1個ずつ型抜きして、最低価格で販売申請する</b></li>
-        </ul>
-        <p style="margin-top:22px">手順はかんたん3ステップ（STEP 1〜3）。<br>準備と、売上の受け取りも、あわせて説明します。</p>
+        <p>手順はかんたん3ステップ（STEP 1〜3）。<br>準備と、売上の受け取りも、あわせて説明します。</p>
         <ol class="flow">
           <li class="side"><b>準備</b><span>アプリを入れて、クリエイター登録</span></li>
           <li><b>STEP 1</b><span>売れる職業とセリフを出す</span></li>
@@ -335,7 +330,6 @@ LINEスタンプメーカーで1個ずつ型抜きして
         <div class="section-head">
           <p class="eyebrow steps-kicker">PREPARE</p>
           <h2>準備</h2>
-          <p>STEP 1の前に、アプリを入れて、<br>クリエイター登録をします。</p>
         </div>
         <div class="step">
           <ol class="num-list">
@@ -367,14 +361,12 @@ LINEスタンプメーカーで1個ずつ型抜きして
           <h3>売れる職業とセリフを<br>AIに出してもらう</h3>
           <p>ChatGPTに、指示の文章（プロンプト）を送ると、売れそうな職業の候補が出ます。<br>作りたいものを選ぶと、その仕事でよく使うセリフをAIが考えてくれます。</p>
           <ol class="num-list">
-            <li>スマホのChatGPTアプリを開いて、新しいチャットを始めます。STEP 2まで、<b>同じチャット</b>で続けます。</li>
+            <li>スマホのChatGPTアプリを開いて、新しいチャットを始めます。</li>
             <li>下のプロンプト①をコピーして、送ります。</li>
             <li>出てきた職業の候補から、<b>作りたい職業の番号</b>を返信します。</li>
             <li>その職業のセリフの候補が<b>45個</b>出ます。まず、使いたい<b>9個</b>の番号を返信します（STEP 2で、1枚の画像に9個入れるためです）。
               <ul class="sub">
                 <li>★は、おすすめの9個です。★のままでよければ、<span class="nw">「★の9個で」</span>と返信します。</li>
-                <li>候補が45個あるのは、いちばん多い40個セットを作るとき（9個×5枚）に、選べるようにするためです。</li>
-                <li>専門用語が中心ですが、<span class="nw">「おはようございます」</span><span class="nw">「お疲れ様です」</span>のような基本の言葉も入っています。</li>
               </ul>
             </li>
             <li>選んだ9個のセリフが、1行ずつ、枠の中に出ます。枠の<b>右上</b>にある、四角が2つ重なったマーク（コピー）を押すと、STEP 2でそのまま貼れます。
@@ -417,12 +409,7 @@ LINEスタンプを買ってくれそうな職業を10個、番号つきで出�
 ・誤字がないか確認する</pre>
             </details>
           </div>
-          <div class="note"><b>注意：</b>
-            <ul>
-              <li>出てくる職業は、販売実績のランキングではありません。使う場面や、専門用語の多さ、共感されやすさなどから、AIが考えた候補です。売上を保証するものではありません。</li>
-              <li>患者さんやお客さんの情報、緊急の対応にかかわるセリフは、実際の仕事の連絡と間違えられないように、同僚との雑談で使う言葉として作ってください。</li>
-            </ul>
-          </div>
+          <div class="note"><b>注意：</b>出てくる職業は、販売実績のランキングではありません。使う場面や、専門用語の多さ、共感されやすさなどから、AIが考えた候補です。売上を保証するものではありません。</div>
         </article>
 
         <!-- STEP 2 -->
@@ -430,16 +417,10 @@ LINEスタンプを買ってくれそうな職業を10個、番号つきで出�
           <span class="step-label">STEP 2</span>
           <h3>スタンプの絵を<br>9個まとめて作ってもらう</h3>
           <p>好きな写真や画像を入れるか、デザインもおまかせにするかを選ぶだけで、スタンプ9個ぶんの絵が、1枚の画像にまとまって出てきます。</p>
-          <p>プロンプト②を送ると、キャラクターの案が3つ出ます。気に入った番号を返信すると、9個入りの画像ができます。<br>あなたが送るのは、<b>プロンプト②</b>と、<b>キャラクターの番号</b>の2つだけです。</p>
+          <p>プロンプト②を送ると、キャラクターの案が3つ出ます。気に入った番号を返信すると、9個入りの画像ができます。</p>
           <div class="rule">
             <div><b>大事なこと</b><p>STEP 1と<strong>同じチャット</strong>で、そのまま続けてください。別のチャットにすると、2枚目以降が作れません。</p></div>
           </div>
-          <ol class="num-list">
-            <li>STEP 1で選んだ<b>職業とセリフ</b>をもとに、キャラクターとデザインを決める</li>
-            <li>好きな画像を<b>入れる／入れない（おまかせ）</b>を選ぶ</li>
-            <li>スタンプ<b>9個を、1枚の画像に、3列×3行で並べて</b>作る（キャラクターのイラスト＋セリフの文字）</li>
-            <li>1個ずつに分けるのは、STEP 3で、アプリの「切り抜き」（正方形）で行います</li>
-          </ol>
 
           <figure class="figure">
             <p class="figure-title">できあがりの例（看護師）</p>
@@ -449,11 +430,10 @@ LINEスタンプを買ってくれそうな職業を10個、番号つきで出�
             <figcaption>ChatGPTで作った例です。背景は透明です（グレーと白の四角い模様は、透明を表しています）。<br>9個が、正方形に近い形で、すき間をあけて並んでいます。</figcaption>
           </figure>
 
-          <div class="plain-box">
+          <div class="plain-box sub">
             <h3>好きな画像を入れる場合のルール</h3>
             <ul class="check-list">
               <li>入れてよいのは、<b>自分で描いた絵や、自分のペットの写真など、自分に権利がある画像</b>だけです。</li>
-              <li>他の人の顔写真や似顔絵、アニメやゲームなどのキャラクター、企業のロゴは入れないでください（審査で却下されます）。</li>
             </ul>
           </div>
 
@@ -524,7 +504,7 @@ LINEスタンプ9個ぶんの絵を、1枚の画像にまとめて作ってく�
             </div>
             <p>⚠ 審査をリクエストしたあとは、個数を変えられません。</p>
             <p style="margin-top:16px"><b>9個より多く作るとき（16個、24個、32個、40個）</b></p>
-            <p>1枚目を作った<b>同じチャット</b>で、次の2つを、順番に送ります。</p>
+            <p><b>同じチャット</b>で、次の2つを、順番に送ります。</p>
             <p style="margin-top:14px"><b>① 次の9個のセリフを、決めてもらう</b></p>
             <div class="prompt">
               <div class="prompt-head"><b>プロンプト③｜次の9個を決める</b><button class="copy" type="button" data-copy="prompt3">コピーする</button></div>
@@ -541,7 +521,7 @@ LINEスタンプ9個ぶんの絵を、1枚の画像にまとめて作ってく�
             <p>タイトルと説明文は、1枚目のときに出た文章を使います。</p>
           </div>
 
-          <div class="plain-box">
+          <div class="plain-box sub">
             <h3>審査で落ちやすいもの（作るときに避ける）</h3>
             <p>LINEの審査のルールに書かれている、却下される例です。</p>
             <ul class="check-list">
@@ -570,17 +550,9 @@ LINEスタンプ9個ぶんの絵を、1枚の画像にまとめて作ってく�
             </ul>
           </div>
 
-          <div class="plain-box">
+          <div class="plain-box sub">
             <h3>できあがりを保存して、確認する</h3>
-            <p>できた画像を、スマホの<b>「写真」に保存</b>します。次を確認しましょう。</p>
-            <ul class="check-list">
-              <li>スタンプが9個そろっている</li>
-              <li>スタンプどうしが、重なっていない</li>
-              <li>1つ1つのスタンプが、正方形に近い形で、横長になっていない</li>
-              <li>セリフに、誤字がない</li>
-              <li>文字だけの画像がない</li>
-              <li>他の人のキャラクター・ロゴ・顔が入っていない</li>
-            </ul>
+            <p>できた画像を、スマホの<b>「写真」に保存</b>します。9個そろっているか、重なっていないか、セリフに誤字がないかを、見ておきましょう。</p>
           </div>
         </article>
 
@@ -602,7 +574,7 @@ LINEスタンプ9個ぶんの絵を、1枚の画像にまとめて作ってく�
               <img src="./assets/stamp-sheet-nurse.webp" width="1254" height="1254" alt="9個入りの画像の左上のスタンプを、四角い枠で囲んだイメージ" loading="lazy">
               <span class="frame" aria-hidden="true"></span>
             </div>
-            <figcaption>イメージ図です。実際の画面とは、見え方が少し違います。<br>枠は、指で画像を動かして合わせます。</figcaption>
+            <figcaption>イメージ図です。実際の画面とは、見え方が少し違います。</figcaption>
           </figure>
 
           <p class="group-label">① 1個ずつ、四角く型抜きする</p>
@@ -615,7 +587,6 @@ LINEスタンプ9個ぶんの絵を、1枚の画像にまとめて作ってく�
             <li>画像の上に、四角い枠が出ます。指で画像を動かして、<b>1個目のスタンプが、枠にぴったり入る</b>ように、位置を微調整します。
               <ul class="sub">
                 <li>二本指で、拡大・縮小もできます。</li>
-                <li>セリフの文字も、キャラクターも、枠から出ないようにします。</li>
                 <li>となりのスタンプが、枠に入らないようにします。</li>
               </ul>
             </li>
@@ -663,7 +634,7 @@ LINEスタンプ9個ぶんの絵を、1枚の画像にまとめて作ってく�
                 <li>審査をリクエストしたあとは、個数を変えられません。スタンプの並びと文字の間違いを、もう一度見てから押してください。</li>
               </ul>
             </li>
-            <li><b>審査</b>があります。かかる日数は約2日間が目安です（早ければ数時間で終わります）。</li>
+            <li><b>審査</b>があります。かかる日数は約2日間が目安です（早ければ数時間で終わります）。却下されることもあります。</li>
             <li>承認されたら、<b>販売開始</b>です。初期設定では、承認のあとに、<b>リリース</b>（販売を始めるボタン）を押す必要があります（承認されると自動で始まる設定もあります）。
               <ul class="sub">
                 <li>リリースすると、LINEスタンプショップとLINE STOREに並びます。反映まで、1時間から数時間かかることがあります。</li>
@@ -672,7 +643,7 @@ LINEスタンプ9個ぶんの絵を、1枚の画像にまとめて作ってく�
             </li>
           </ol>
 
-          <div class="plain-box">
+          <div class="plain-box sub">
             <h3>却下されたとき</h3>
             <ul class="check-list">
               <li>アプリでは、編集も再申請もできません。</li>
@@ -683,12 +654,10 @@ LINEスタンプ9個ぶんの絵を、1枚の画像にまとめて作ってく�
 
           <div class="note"><b>注意：</b>
             <ul>
-              <li>審査にかかる日数は目安です。却下されることもあります。</li>
               <li>AIを使ったスタンプには、販売ページに<b>AIアイコンが表示される</b>ことがあります（LINEの判断による）。判断の基準は、変更されることがあります。</li>
               <li>最低価格にするのは、買ってもらいやすくするためです。売れることを約束するものではありません。</li>
               <li>販売価格は、承認されたあとでも、販売を始める前なら、変えられます。</li>
-              <li><span class="nw">「ショップ公開」</span>と<span class="nw">「売上分配額あり」</span>は、販売申請のときに選びます。</li>
-              <li>アプリで<span class="nw">公開／非公開</span>を選べるのは、申請のときだけです。あとから変えるときは、ブラウザ（SafariやChromeなど）でLINE Creators Marketのマイページ（パソコンの画面）を開きます。</li>
+              <li>公開／非公開は、アプリでは、販売申請のときだけ選べます。あとから変えるときは、ブラウザ（SafariやChromeなど）でLINE Creators Marketのマイページ（パソコンの画面）を開きます。</li>
               <li>販売を始めても、口座の登録をしないと、売上金は受け取れません（下の<span class="nw">「売上を受け取る」</span>を確認してください）。</li>
             </ul>
           </div>
@@ -711,31 +680,10 @@ LINEスタンプ9個ぶんの絵を、1枚の画像にまとめて作ってく�
 
         <!-- 補足カード -->
         <div class="step">
-          <h3>うまくいかないとき・<br>つまずきやすいところ</h3>
-          <ul class="check-list">
-            <li><b>どの職業から作る？</b><br>プロンプト①で最初に出る職業の候補の中から、自分がくわしい仕事や、身近に働いている人がいる仕事を選びます。1つ作って反応を見て、次を作りましょう。</li>
-            <li><b>審査に落ちたとき</b><br>STEP 2の<span class="nw">「審査で落ちやすいもの」</span>に当てはまっていないか確認して、直してから、再申請します。再申請のしかたは、STEP 3の<span class="nw">「却下されたとき」</span>を見てください。</li>
-          </ul>
+          <h3>どの職業から作る？</h3>
+          <p>プロンプト①で最初に出る職業の候補の中から、自分がくわしい仕事や、身近に働いている人がいる仕事を選びます。1つ作って反応を見て、次を作りましょう。</p>
         </div>
 
-        <div class="step">
-          <h3>こんなとき、どうする？</h3>
-          <div class="table-wrap">
-            <table>
-              <thead><tr><th>こんなとき</th><th>対処</th></tr></thead>
-              <tbody>
-                <tr><td>スタンプが重なっている・すき間が狭い</td><td>STEP 2の<span class="nw">「うまくいかないとき」</span>の、1つ目の文を送って、作り直してもらう</td></tr>
-                <tr><td>スタンプが横長になっている</td><td>STEP 2の<span class="nw">「うまくいかないとき」</span>の、2つ目の文を送って、作り直してもらう</td></tr>
-                <tr><td>セリフの文字が崩れている・誤字がある</td><td>直したい場所と正しいセリフを伝える。直らないときは、作り直してもらう</td></tr>
-                <tr><td>型抜きの枠に、となりのスタンプが入る・文字が欠ける</td><td>画像を動かして、枠の位置と大きさを合わせ直す。それでも入るときは、1つ目と同じ文を送って、作り直してもらう</td></tr>
-                <tr><td>型抜きしたスタンプの背景が、白い四角になる</td><td>背景が透明になっていない。STEP 2の<span class="nw">「うまくいかないとき」</span>の、3つ目の文を送る</td></tr>
-                <tr><td>販売情報が<span class="nw">「ショップ非公開」</span><span class="nw">「売上分配額なし」</span>のまま</td><td>販売申請の前に、<span class="nw">「ショップ公開」</span><span class="nw">「売上分配額あり」</span>に変える（STEP 3の<span class="nw">「販売情報」</span>）</td></tr>
-                <tr><td>画像が表示されない（ファイルになる・黒い画面になる）</td><td>STEP 2の<span class="nw">「うまくいかないとき」</span>の、4つ目の文を送って、チャットの中に出し直してもらう</td></tr>
-                <tr><td>個数を間違えた</td><td>審査をリクエストする前なら、変更できる。リクエストしたあとは変更できない</td></tr>
-              </tbody>
-            </table>
-          </div>
-        </div>
       </div>
     </section>
 
