@@ -104,6 +104,11 @@
     /* 警告・注意書きは落ち着いたトーンに */
     .note{margin-top:22px;border-left:3px solid rgba(184,117,86,.55);background:#f6efe8;padding:14px 16px;border-radius:0 12px 12px 0;color:var(--muted);font-size:.85rem;line-height:1.8}
     .note b{color:#6a5a4c}
+    .note.fold summary{cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:12px;list-style:none}
+    .note.fold summary::-webkit-details-marker{display:none}
+    .note.fold summary::after{content:"＋";font-weight:700;color:var(--terra);font-size:1.1rem}
+    .note.fold[open] summary::after{content:"－"}
+    .note.fold[open] summary{margin-bottom:8px}
     .note.strong{background:#f8e7de;border-left-color:#b8573a;font-size:.92rem}
     .note ul{margin:8px 0 0;padding-left:1.2em}
     .note li+li{margin-top:4px}
@@ -535,7 +540,9 @@ LINEスタンプ9個ぶんの絵を、1枚の画像にまとめて作ってく�
             </ul>
           </div>
 
-          <div class="note"><b>うまくいかないとき：</b>毎回うまくいくとは限りません。次のように伝えて、作り直してもらいます。
+          <details class="note fold">
+            <summary><span><b>うまくいかないとき</b>（タップで開く）</span></summary>
+            <p style="margin:0">毎回うまくいくとは限りません。次のように伝えて、作り直してもらいます。</p>
             <ul>
               <li><b>スタンプが重なっている・すき間が狭い・数が足りない</b>
                 <div class="say"><p id="say1">スタンプどうしの間を広くあけてください。1つ1つのスタンプを、1マスの8割以内の小さめの大きさにして、マスの中央に置き、隣どうしのふちが触れないようにして、9個とも作り直してください。</p><button class="copy" type="button" data-copy="say1">コピーする</button></div></li>
@@ -547,7 +554,7 @@ LINEスタンプ9個ぶんの絵を、1枚の画像にまとめて作ってく�
               <li><b>画像が表示されない</b><br>ファイルや、保存用のリンクになったり、開くと黒い画面になったりしたときは、次のように伝えて、チャットの中に、出し直してもらいます。
                 <div class="say"><p id="say4">画像が表示されません。同じセリフ9個で、同じキャラクター・同じ絵柄の画像を、1枚目と同じように、チャットの中に画像として出し直してください。ファイルや、保存用のリンクにはしないでください。説明は書かないでください。</p><button class="copy" type="button" data-copy="say4">コピーする</button></div></li>
             </ul>
-          </div>
+          </details>
 
           <div class="plain-box sub">
             <h3>できあがりを保存して、確認する</h3>
