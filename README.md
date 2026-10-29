@@ -38,7 +38,7 @@ STEPは1〜3だけです（動画の①②③と同じ3ステップ）。「準�
 ## 画像素材（`assets/`）
 
 - `stamp-sheet-nurse.webp`：看護師の9個シート（1254×1254px、背景透明）。「できあがりの例」と、STEP 3の「型抜きの枠」の図に使用（枠はCSSで重ねている）
-- `example-stamp-konezumi.webp`：「売れているスタンプの例」。LINE STOREの画面（「看護師こねずみ」、190円、ハート3,989）
+- `example-stamp.webp`：「売れているスタンプの例」。LINE STOREの画面（190円、ハート3,989。スタンプ名と制作者名はぼかし済み）
 - `free-gift-banner.png`／`kumi-profile.png`：テンプレートの固定素材
 
 ## 固定部分（テンプレートから変更なし）
